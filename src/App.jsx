@@ -8,11 +8,12 @@ const allCategories = ["Home", ...new Set(items.map((item) => item.category))];
 
 function App() {
   const [menuItems, setMenuItems] = useState(items);
-  const categories= allCategories;
+  const categories = allCategories;
 
   const filterItems = (category) => {
     if (category === "Home") {
       setMenuItems(items);
+      setStatus(true)
       return;
     }
     const newItems = items.filter((item) => item.category === category);
@@ -22,8 +23,8 @@ function App() {
   return (
     <>
       <Header categories={categories} filterItems={filterItems} />
-      <main>
-        <section className="">
+      <main className="w-4/5 m-auto pt-8 mt-12">
+        <section>
           <Menu items={menuItems} />
         </section>
       </main>

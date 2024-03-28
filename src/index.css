@@ -3,32 +3,9 @@
 @tailwind utilities;
 
 
-main {
-  width: 1200px;
-  margin: auto;
-  padding: 30px;
-  margin-top: 50px;
-}
-
-
-
 .title {
   text-align: center;
   position: relative;
-}
-
-.underline {
-  position: absolute;
-  width: 100px;
-  height: 4px;
-  bottom: -20px;
-  background: rgb(113, 185, 243);
-  right: 50%;
-  transform: translateX(50%);
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
 }
 
 .section-center {

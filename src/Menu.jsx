@@ -11,7 +11,7 @@ function Menu({ items }) {
             <div className="item-info">
               <header>
                 <h4>{title}</h4>
-                <h5 className="price">{price}</h5>
+                <h5 className="font-bold font-sans">{price}</h5>
               </header>
               <p className="items-text pt-4 text-sm">{desc}</p>
             </div>
